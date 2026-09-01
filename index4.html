@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Online Shopping Product Management</title>
+</head>
+<body>
+    <script>
+        
+    let product = {
+    productId: 101,
+    productName: "Wireless Mouse",
+    price: 799,
+    quantity: 2,
+
+    
+    calculateTotalPrice: function () {
+        return this.price * this.quantity;
+    },
+
+    
+    updateQuantity: function (newQuantity) {
+        this.quantity = newQuantity;
+        console.log("Quantity updated successfully!");
+    },
+
+    
+    displayDetails: function () {
+        console.log("Product ID:", this.productId);
+        console.log("Product Name:", this.productName);
+        console.log("Price:", this.price);
+        console.log("Quantity:", this.quantity);
+        console.log("Total Price:", this.calculateTotalPrice());
+    }
+    };
+    product.displayDetails();
+
+
+    product.updateQuantity(5);
+
+
+    console.log("\nAfter Updating Quantity:");
+    product.displayDetails();
+    </script>
+</body>
+</html>
