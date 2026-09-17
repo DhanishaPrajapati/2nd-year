@@ -8,4 +8,4 @@ class Student
         console.log(this.LName);
     }
 }
-Student.display();
+Student.display();                           
